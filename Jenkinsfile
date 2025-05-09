@@ -58,7 +58,7 @@ pipeline {
             }
         }
 
-        /* stage('E2E') {
+        stage('E2E') {
             agent {
                 docker {
                     image 'mcr.microsoft.com/playwright:v1.39.0-jammy'
@@ -73,7 +73,7 @@ pipeline {
                     npx playwright test --reporter=html
                 '''
             }
-        } */
+        }
     }
 
    // post {
