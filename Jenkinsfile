@@ -24,7 +24,7 @@ pipeline {
             }
         }
 
-        stage('Test'){
+        stage('Unit Test'){
             agent {
                 docker {
                     image 'node:18-bullseye'
@@ -40,7 +40,7 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('Deploy to Production') {
             agent {
                 docker {
                     image 'node:18-bullseye'
